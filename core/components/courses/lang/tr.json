@@ -1,5 +1,10 @@
 {
+    "enrolme": "Beni kaydet",
     "filter": "Filtre",
     "frontpage": "Ön sayfa",
-    "mycourses": "Derslerim"
+    "mycourses": "Derslerim",
+    "nocourses": "Gösterilecek ders bilgisi yok",
+    "password": "Şifre",
+    "search": "Ara",
+    "searchcourses": "Dersleri ara"
 }
