@@ -329,6 +329,10 @@ mm-navigation-bar {
 .item.item-button-right .badge.mm-course-download{
   right: $spinner-width + $item-padding;
 }
+#mm-settings-languagelabel {
+  color: $base-color;
+}
+
 // Variables.
 $bar-side-menu-height: 80px !default;
 $bar-side-menu-color: $bar-content-bg !default;
@@ -354,10 +358,6 @@ $bar-side-menu-text-color: $bar-content-text !default;
 
 .has-side-menu-header {
   top: $bar-side-menu-height;
-}
-
-#mm-settings-languagelabel {
-  color: $base-color;
 }
 
 input.mma-files-picker {
