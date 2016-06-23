@@ -8282,6 +8282,23 @@ input.mma-files-picker {
     font-size: 100%;
     line-height: initial; }
 
+.mma-mod_choice-user {
+  position: relative;
+  display: inline-block; }
+  .mma-mod_choice-user img {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    left: 50%;
+    margin-left: -20px; }
+  .mma-mod_choice-user p {
+    display: inline-block;
+    padding-top: 50px; }
+
+.mma-mod_choice-graph-horizontal {
+  height: 50px; }
+
 .mma-chat-notice {
   text-align: center;
   margin-top: 10px; }
@@ -8303,23 +8320,6 @@ input.mma-files-picker {
 
 .mma-chat-reconnect-button, .button.mma-chat-reconnect-button {
   margin: 0; }
-
-.mma-mod_choice-user {
-  position: relative;
-  display: inline-block; }
-  .mma-mod_choice-user img {
-    position: absolute;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    left: 50%;
-    margin-left: -20px; }
-  .mma-mod_choice-user p {
-    display: inline-block;
-    padding-top: 50px; }
-
-.mma-mod_choice-graph-horizontal {
-  height: 50px; }
 
 .mma-forum-discussion-link {
   text-decoration: none; }
