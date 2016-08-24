@@ -8275,9 +8275,6 @@ mm-format-text audio, mm-format-text video, mm-format-text a, mm-format-text ifr
 .cke_inner.cke_maximized .cke_toolbox_main {
   margin: 0; }
 
-.item.item-button-right .badge.mm-course-download, .item.item-button-right .mma-messages-date span.mm-course-download, .mma-messages-date .item.item-button-right span.mm-course-download, .item.item-button-right .mma-chat-notice span.mm-course-download, .mma-chat-notice .item.item-button-right span.mm-course-download {
-  right: 44px; }
-
 input.mm-fileuploader-picker {
   position: absolute;
   top: 0;
@@ -8286,6 +8283,9 @@ input.mm-fileuploader-picker {
   min-height: 100%;
   opacity: 0;
   outline: none; }
+
+.item.item-button-right .badge.mm-course-download, .item.item-button-right .mma-messages-date span.mm-course-download, .mma-messages-date .item.item-button-right span.mm-course-download, .item.item-button-right .mma-chat-notice span.mm-course-download, .mma-chat-notice .item.item-button-right span.mm-course-download {
+  right: 44px; }
 
 .mm-question-textarea {
   width: 100%;

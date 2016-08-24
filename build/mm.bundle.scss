@@ -725,10 +725,6 @@ mm-format-text {
   }
 }
 
-
-.item.item-button-right .badge.mm-course-download{
-  right: $spinner-width + $item-padding;
-}
 input.mm-fileuploader-picker {
   position: absolute;
   top: 0;
@@ -739,6 +735,10 @@ input.mm-fileuploader-picker {
   outline: none;
 }
 
+
+.item.item-button-right .badge.mm-course-download{
+  right: $spinner-width + $item-padding;
+}
 
 $mm-question-correct-color:         #468847 !default;
 $mm-question-incorrect-color:       #b94a48 !default;
