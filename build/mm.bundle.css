@@ -9368,15 +9368,6 @@ mm-format-text[max-height], *[mm-format-text][max-height] {
 .mm-course-module-handler mm-format-text + mm-format-text {
   margin-top: 16px; }
 
-input.mm-fileuploader-picker {
-  position: absolute;
-  top: 0;
-  right: 0;
-  min-width: 100%;
-  min-height: 100%;
-  opacity: 0;
-  outline: none; }
-
 /* - User grades table (most of it extracted from MM1)
 -------------------------------------------------------------------------- */
 .mm-grades-table {
@@ -9443,23 +9434,14 @@ input.mm-fileuploader-picker {
     border-top: 1px solid #ddd;
     border-bottom: 1px solid #ddd; }
 
-.mm-mm_login_sites .item-thumbnail-left .item-content {
-  padding-top: 16px;
-  padding-right: 16px; }
-.mm-mm_login_sites .list-left-editing .item-thumbnail-left .item-content {
-  padding-right: 49px; }
-.mm-mm_login_sites .avatar {
-  margin: 0;
-  width: 80px;
-  height: 80px;
-  max-width: 80px;
-  max-height: 80px;
-  border-radius: 50%;
-  padding: 4px;
-  border: 1px solid #ddd; }
-
-.mm-login-sitepolicy-iframe {
-  height: 300px; }
+input.mm-fileuploader-picker {
+  position: absolute;
+  top: 0;
+  right: 0;
+  min-width: 100%;
+  min-height: 100%;
+  opacity: 0;
+  outline: none; }
 
 .mm-question-textarea {
   width: 100%;
@@ -9555,6 +9537,24 @@ input.mm-fileuploader-picker {
 .mm-site_mm_user-profile .mm-tab-handlers {
   padding-bottom: 16px; }
 
+.mm-mm_login_sites .item-thumbnail-left .item-content {
+  padding-top: 16px;
+  padding-right: 16px; }
+.mm-mm_login_sites .list-left-editing .item-thumbnail-left .item-content {
+  padding-right: 49px; }
+.mm-mm_login_sites .avatar {
+  margin: 0;
+  width: 80px;
+  height: 80px;
+  max-width: 80px;
+  max-height: 80px;
+  border-radius: 50%;
+  padding: 4px;
+  border: 1px solid #ddd; }
+
+.mm-login-sitepolicy-iframe {
+  height: 300px; }
+
 .mm-site_frontpage .mma-frontpage-item-container .item-media {
   min-height: 55px;
   padding-left: 54px; }
@@ -9632,6 +9632,24 @@ input.mm-fileuploader-picker {
 .mma-messages-showprevious-spinner-container {
   width: 100%;
   text-align: center; }
+
+.mma-mod_survey-darkbg {
+  background-color: #f1f1f1; }
+
+.mma-mod_survey-padding-top {
+  padding-top: 20px; }
+
+textarea.mma-mod_survey-textarea {
+  height: 100px;
+  border: 1px solid #ddd; }
+
+select.mma-mod_survey-select {
+  background-color: transparent;
+  padding-left: 0px;
+  padding-right: 32px;
+  max-width: 100%; }
+  select.mma-mod_survey-select .mma-mod_survey-defaultoption {
+    display: none; }
 
 .mm-site_mod_assign div.latesubmission, .mm-site_mod_assign-submission div.latesubmission {
   background-color: #efcfcf; }
@@ -9973,24 +9991,6 @@ ion-popover-view {
   padding-top: 10px;
   padding-bottom: 10px; }
 
-.mma-mod_survey-darkbg {
-  background-color: #f1f1f1; }
-
-.mma-mod_survey-padding-top {
-  padding-top: 20px; }
-
-textarea.mma-mod_survey-textarea {
-  height: 100px;
-  border: 1px solid #ddd; }
-
-select.mma-mod_survey-select {
-  background-color: transparent;
-  padding-left: 0px;
-  padding-right: 32px;
-  max-width: 100%; }
-  select.mma-mod_survey-select .mma-mod_survey-defaultoption {
-    display: none; }
-
 .wiki-toc {
   border: 1px solid #bbb;
   background: #eee;
@@ -10120,79 +10120,6 @@ select.mma-mod_survey-select {
   z-index: 3;
   box-shadow: 3px 3px 4px #000; }
 
-.mma-qtype-ddmarker-container mm-loading {
-  position: absolute;
-  left: 50%; }
-.mma-qtype-ddmarker-container .qtext {
-  margin-bottom: 0.5em;
-  display: block; }
-.mma-qtype-ddmarker-container div.droparea img {
-  border: 1px solid #000;
-  max-width: 100%; }
-.mma-qtype-ddmarker-container .draghome img, .mma-qtype-ddmarker-container .draghome span {
-  visibility: hidden; }
-.mma-qtype-ddmarker-container .dragitems .dragitem {
-  cursor: pointer;
-  position: absolute;
-  z-index: 2; }
-.mma-qtype-ddmarker-container .dropzones {
-  position: absolute; }
-.mma-qtype-ddmarker-container .dropzones svg {
-  z-index: 3; }
-.mma-qtype-ddmarker-container .dragitem.beingdragged .markertext {
-  z-index: 5;
-  box-shadow: 3px 3px 4px #000; }
-.mma-qtype-ddmarker-container .dragitems .draghome {
-  margin: 10px;
-  display: inline-block; }
-.mma-qtype-ddmarker-container .dragitems.readonly .dragitem {
-  cursor: auto; }
-.mma-qtype-ddmarker-container div.ddarea {
-  text-align: center; }
-.mma-qtype-ddmarker-container div.ddarea .markertexts {
-  min-height: 80px;
-  position: absolute;
-  text-align: left; }
-.mma-qtype-ddmarker-container .dropbackground {
-  margin: 0 auto; }
-.mma-qtype-ddmarker-container div.dragitems div.draghome, .mma-qtype-ddmarker-container div.dragitems div.dragitem, .mma-qtype-ddmarker-container div.draghome, .mma-qtype-ddmarker-container div.drag {
-  font: 13px/1.231 arial, helvetica, clean, sans-serif; }
-.mma-qtype-ddmarker-container div.dragitems span.markertext, .mma-qtype-ddmarker-container div.markertexts span.markertext {
-  margin: 0 5px;
-  z-index: 2;
-  background-color: white;
-  border: 2px solid black;
-  padding: 5px;
-  display: inline-block;
-  zoom: 1;
-  border-radius: 10px; }
-.mma-qtype-ddmarker-container div.markertexts span.markertext {
-  z-index: 3;
-  background-color: yellow;
-  border-style: solid;
-  border-width: 2px;
-  border-color: khaki;
-  position: absolute; }
-.mma-qtype-ddmarker-container span.wrongpart {
-  background-color: yellow;
-  border-style: solid;
-  border-width: 2px;
-  border-color: khaki;
-  padding: 5px;
-  border-radius: 10px;
-  filter: alpha(opacity=60);
-  opacity: 0.6;
-  margin: 5px;
-  display: inline-block; }
-.mma-qtype-ddmarker-container div.dragitems img.target {
-  position: absolute;
-  left: -7px;
-  /* This must be half the size of the target image, minus 0.5. */
-  top: -7px;
-  /* In other words, this works for a 15x15 cross-hair. */ }
-.mma-qtype-ddmarker-container div.dragitems div.draghome img.target {
-  display: none; }
-
 .mma-qtype-ddwtos-container .qtext {
   margin-bottom: 0.5em;
   display: block; }
@@ -10297,3 +10224,76 @@ select.mma-mod_survey-select {
 .mma-qtype-multianswer-container input[type="radio"], .mma-qtype-multianswer-container input[type="checkbox"] {
   margin-top: -4px;
   margin-right: 7px; }
+
+.mma-qtype-ddmarker-container mm-loading {
+  position: absolute;
+  left: 50%; }
+.mma-qtype-ddmarker-container .qtext {
+  margin-bottom: 0.5em;
+  display: block; }
+.mma-qtype-ddmarker-container div.droparea img {
+  border: 1px solid #000;
+  max-width: 100%; }
+.mma-qtype-ddmarker-container .draghome img, .mma-qtype-ddmarker-container .draghome span {
+  visibility: hidden; }
+.mma-qtype-ddmarker-container .dragitems .dragitem {
+  cursor: pointer;
+  position: absolute;
+  z-index: 2; }
+.mma-qtype-ddmarker-container .dropzones {
+  position: absolute; }
+.mma-qtype-ddmarker-container .dropzones svg {
+  z-index: 3; }
+.mma-qtype-ddmarker-container .dragitem.beingdragged .markertext {
+  z-index: 5;
+  box-shadow: 3px 3px 4px #000; }
+.mma-qtype-ddmarker-container .dragitems .draghome {
+  margin: 10px;
+  display: inline-block; }
+.mma-qtype-ddmarker-container .dragitems.readonly .dragitem {
+  cursor: auto; }
+.mma-qtype-ddmarker-container div.ddarea {
+  text-align: center; }
+.mma-qtype-ddmarker-container div.ddarea .markertexts {
+  min-height: 80px;
+  position: absolute;
+  text-align: left; }
+.mma-qtype-ddmarker-container .dropbackground {
+  margin: 0 auto; }
+.mma-qtype-ddmarker-container div.dragitems div.draghome, .mma-qtype-ddmarker-container div.dragitems div.dragitem, .mma-qtype-ddmarker-container div.draghome, .mma-qtype-ddmarker-container div.drag {
+  font: 13px/1.231 arial, helvetica, clean, sans-serif; }
+.mma-qtype-ddmarker-container div.dragitems span.markertext, .mma-qtype-ddmarker-container div.markertexts span.markertext {
+  margin: 0 5px;
+  z-index: 2;
+  background-color: white;
+  border: 2px solid black;
+  padding: 5px;
+  display: inline-block;
+  zoom: 1;
+  border-radius: 10px; }
+.mma-qtype-ddmarker-container div.markertexts span.markertext {
+  z-index: 3;
+  background-color: yellow;
+  border-style: solid;
+  border-width: 2px;
+  border-color: khaki;
+  position: absolute; }
+.mma-qtype-ddmarker-container span.wrongpart {
+  background-color: yellow;
+  border-style: solid;
+  border-width: 2px;
+  border-color: khaki;
+  padding: 5px;
+  border-radius: 10px;
+  filter: alpha(opacity=60);
+  opacity: 0.6;
+  margin: 5px;
+  display: inline-block; }
+.mma-qtype-ddmarker-container div.dragitems img.target {
+  position: absolute;
+  left: -7px;
+  /* This must be half the size of the target image, minus 0.5. */
+  top: -7px;
+  /* In other words, this works for a 15x15 cross-hair. */ }
+.mma-qtype-ddmarker-container div.dragitems div.draghome img.target {
+  display: none; }
