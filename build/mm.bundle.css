@@ -9368,6 +9368,82 @@ mm-format-text[max-height], *[mm-format-text][max-height] {
 .mm-course-module-handler mm-format-text + mm-format-text {
   margin-top: 16px; }
 
+input.mm-fileuploader-picker {
+  position: absolute;
+  top: 0;
+  right: 0;
+  min-width: 100%;
+  min-height: 100%;
+  opacity: 0;
+  outline: none; }
+
+#mm-settings-languagelabel {
+  color: #000; }
+
+.mm-question-textarea {
+  width: 100%;
+  height: 250px;
+  resize: none; }
+
+.mm-question-answer-correct, select.mm-question-answer-correct, input.mm-question-answer-correct, input[readonly]:not(.cloned-text-input).mm-question-answer-correct, textarea.mm-question-answer-correct, textarea[readonly]:not(.cloned-text-input).mm-question-answer-correct, label.mm-question-answer-correct, li.mm-question-answer-correct, .mm-question-answer-correct p, .mm-question-answer-correct input, .mm-question-answer-correct select, .mm-question-answer-correct .item-radio input:checked + .radio-content .item-content, .mm-question-answer-correct.item-radio input:checked + .radio-content .item-content, .mm-question-comment, .mm-question-comment p {
+  color: #468847;
+  -webkit-text-fill-color: #468847;
+  /* Override iOS / Android font color change */
+  background-color: #dff0d8; }
+
+.mm-question-answer-correct .checkbox input:disabled:checked:before, .mm-question-answer-correct .checkbox input:disabled:checked + .checkbox-icon:before {
+  background-color: #468847;
+  border-color: #468847; }
+
+.mm-question-answer-incorrect, select.mm-question-answer-incorrect, input.mm-question-answer-incorrect, input[readonly]:not(.cloned-text-input).mm-question-answer-incorrect, textarea.mm-question-answer-incorrect, textarea[readonly]:not(.cloned-text-input).mm-question-answer-incorrect, label.mm-question-answer-incorrect, li.mm-question-answer-incorrect, .mm-question-answer-incorrect p, .mm-question-answer-incorrect input, .mm-question-answer-incorrect select, .mm-question-answer-incorrect .item-radio input:checked + .radio-content .item-content, .mm-question-answer-incorrect.item-radio input:checked + .radio-content .item-content, .mm-question-incorrect, .mm-question-incorrect p {
+  color: #b94a48;
+  -webkit-text-fill-color: #b94a48;
+  /* Override iOS / Android font color change */
+  background-color: #f2dede; }
+
+.mm-question-answer-incorrect .checkbox input:disabled:checked:before, .mm-question-answer-incorrect .checkbox input:disabled:checked + .checkbox-icon:before {
+  background-color: #b94a48;
+  border-color: #b94a48; }
+
+.mm-question-answer-correct input:disabled, .mm-question-answer-incorrect input:disabled {
+  opacity: 1; }
+
+.mm-question-feedback-container {
+  background-color: #fcf8e3;
+  color: #8a6d3b; }
+  .mm-question-feedback-container .specificfeedback, .mm-question-feedback-container .rightanswer, .mm-question-feedback-container .im-feedback, .mm-question-feedback-container .feedback, .mm-question-feedback-container .generalfeedback {
+    margin: 0 0 .5em; }
+  .mm-question-feedback-container .correctness {
+    display: inline-block;
+    padding: 2px 4px;
+    font-weight: bold;
+    line-height: 14px;
+    color: #fff;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+    background-color: #999;
+    -webkit-border-radius: 3px;
+    border-radius: 3px; }
+    .mm-question-feedback-container .correctness.incorrect {
+      background-color: #b94a48; }
+    .mm-question-feedback-container .correctness.correct {
+      background-color: #468847; }
+
+.mm-question-feedback-inline {
+  display: inline-block; }
+
+.mm-question-feedback-padding {
+  padding: 8px 35px 8px 14px; }
+
+.item.mm-question-correct, .mm-grades-table .mm-question-correct.itemcenter, .platform-android .item.mm-question-correct, .platform-android .mm-grades-table .mm-question-correct.itemcenter, .mm-grades-table .platform-android .mm-question-correct.itemcenter, .platform-ios .item.mm-question-correct, .platform-ios .mm-grades-table .mm-question-correct.itemcenter, .mm-grades-table .platform-ios .mm-question-correct.itemcenter {
+  background-color: #cfc; }
+.item.mm-question-partiallycorrect, .mm-grades-table .mm-question-partiallycorrect.itemcenter, .platform-android .item.mm-question-partiallycorrect, .platform-android .mm-grades-table .mm-question-partiallycorrect.itemcenter, .mm-grades-table .platform-android .mm-question-partiallycorrect.itemcenter, .platform-ios .item.mm-question-partiallycorrect, .platform-ios .mm-grades-table .mm-question-partiallycorrect.itemcenter, .mm-grades-table .platform-ios .mm-question-partiallycorrect.itemcenter {
+  background-color: #ffa; }
+.item.mm-question-notanswered, .mm-grades-table .mm-question-notanswered.itemcenter, .item.mm-question-incorrect, .mm-grades-table .mm-question-incorrect.itemcenter, .platform-android .item.mm-question-notanswered, .platform-android .mm-grades-table .mm-question-notanswered.itemcenter, .mm-grades-table .platform-android .mm-question-notanswered.itemcenter, .platform-android .item.mm-question-incorrect, .platform-android .mm-grades-table .mm-question-incorrect.itemcenter, .mm-grades-table .platform-android .mm-question-incorrect.itemcenter, .platform-ios .item.mm-question-notanswered, .platform-ios .mm-grades-table .mm-question-notanswered.itemcenter, .mm-grades-table .platform-ios .mm-question-notanswered.itemcenter, .platform-ios .item.mm-question-incorrect, .platform-ios .mm-grades-table .mm-question-incorrect.itemcenter, .mm-grades-table .platform-ios .mm-question-incorrect.itemcenter {
+  background-color: #fcc; }
+
+.mm-question-warning, p.mm-question-warning, .item .mm-question-warning, .mm-grades-table .itemcenter .mm-question-warning {
+  color: #c00; }
+
 /* - User grades table (most of it extracted from MM1)
 -------------------------------------------------------------------------- */
 .mm-grades-table {
@@ -9434,100 +9510,6 @@ mm-format-text[max-height], *[mm-format-text][max-height] {
     border-top: 1px solid #ddd;
     border-bottom: 1px solid #ddd; }
 
-input.mm-fileuploader-picker {
-  position: absolute;
-  top: 0;
-  right: 0;
-  min-width: 100%;
-  min-height: 100%;
-  opacity: 0;
-  outline: none; }
-
-.mm-mm_login_sites .item-thumbnail-left .item-content {
-  padding-top: 16px;
-  padding-right: 16px; }
-.mm-mm_login_sites .list-left-editing .item-thumbnail-left .item-content {
-  padding-right: 49px; }
-.mm-mm_login_sites .avatar {
-  margin: 0;
-  width: 80px;
-  height: 80px;
-  max-width: 80px;
-  max-height: 80px;
-  border-radius: 50%;
-  padding: 4px;
-  border: 1px solid #ddd; }
-
-.mm-login-sitepolicy-iframe {
-  height: 300px; }
-
-.mm-question-textarea {
-  width: 100%;
-  height: 250px;
-  resize: none; }
-
-.mm-question-answer-correct, select.mm-question-answer-correct, input.mm-question-answer-correct, input[readonly]:not(.cloned-text-input).mm-question-answer-correct, textarea.mm-question-answer-correct, textarea[readonly]:not(.cloned-text-input).mm-question-answer-correct, label.mm-question-answer-correct, li.mm-question-answer-correct, .mm-question-answer-correct p, .mm-question-answer-correct input, .mm-question-answer-correct select, .mm-question-answer-correct .item-radio input:checked + .radio-content .item-content, .mm-question-answer-correct.item-radio input:checked + .radio-content .item-content, .mm-question-comment, .mm-question-comment p {
-  color: #468847;
-  -webkit-text-fill-color: #468847;
-  /* Override iOS / Android font color change */
-  background-color: #dff0d8; }
-
-.mm-question-answer-correct .checkbox input:disabled:checked:before, .mm-question-answer-correct .checkbox input:disabled:checked + .checkbox-icon:before {
-  background-color: #468847;
-  border-color: #468847; }
-
-.mm-question-answer-incorrect, select.mm-question-answer-incorrect, input.mm-question-answer-incorrect, input[readonly]:not(.cloned-text-input).mm-question-answer-incorrect, textarea.mm-question-answer-incorrect, textarea[readonly]:not(.cloned-text-input).mm-question-answer-incorrect, label.mm-question-answer-incorrect, li.mm-question-answer-incorrect, .mm-question-answer-incorrect p, .mm-question-answer-incorrect input, .mm-question-answer-incorrect select, .mm-question-answer-incorrect .item-radio input:checked + .radio-content .item-content, .mm-question-answer-incorrect.item-radio input:checked + .radio-content .item-content, .mm-question-incorrect, .mm-question-incorrect p {
-  color: #b94a48;
-  -webkit-text-fill-color: #b94a48;
-  /* Override iOS / Android font color change */
-  background-color: #f2dede; }
-
-.mm-question-answer-incorrect .checkbox input:disabled:checked:before, .mm-question-answer-incorrect .checkbox input:disabled:checked + .checkbox-icon:before {
-  background-color: #b94a48;
-  border-color: #b94a48; }
-
-.mm-question-answer-correct input:disabled, .mm-question-answer-incorrect input:disabled {
-  opacity: 1; }
-
-.mm-question-feedback-container {
-  background-color: #fcf8e3;
-  color: #8a6d3b; }
-  .mm-question-feedback-container .specificfeedback, .mm-question-feedback-container .rightanswer, .mm-question-feedback-container .im-feedback, .mm-question-feedback-container .feedback, .mm-question-feedback-container .generalfeedback {
-    margin: 0 0 .5em; }
-  .mm-question-feedback-container .correctness {
-    display: inline-block;
-    padding: 2px 4px;
-    font-weight: bold;
-    line-height: 14px;
-    color: #fff;
-    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
-    background-color: #999;
-    -webkit-border-radius: 3px;
-    border-radius: 3px; }
-    .mm-question-feedback-container .correctness.incorrect {
-      background-color: #b94a48; }
-    .mm-question-feedback-container .correctness.correct {
-      background-color: #468847; }
-
-.mm-question-feedback-inline {
-  display: inline-block; }
-
-.mm-question-feedback-padding {
-  padding: 8px 35px 8px 14px; }
-
-.item.mm-question-correct, .mm-grades-table .mm-question-correct.itemcenter, .platform-android .item.mm-question-correct, .platform-android .mm-grades-table .mm-question-correct.itemcenter, .mm-grades-table .platform-android .mm-question-correct.itemcenter, .platform-ios .item.mm-question-correct, .platform-ios .mm-grades-table .mm-question-correct.itemcenter, .mm-grades-table .platform-ios .mm-question-correct.itemcenter {
-  background-color: #cfc; }
-.item.mm-question-partiallycorrect, .mm-grades-table .mm-question-partiallycorrect.itemcenter, .platform-android .item.mm-question-partiallycorrect, .platform-android .mm-grades-table .mm-question-partiallycorrect.itemcenter, .mm-grades-table .platform-android .mm-question-partiallycorrect.itemcenter, .platform-ios .item.mm-question-partiallycorrect, .platform-ios .mm-grades-table .mm-question-partiallycorrect.itemcenter, .mm-grades-table .platform-ios .mm-question-partiallycorrect.itemcenter {
-  background-color: #ffa; }
-.item.mm-question-notanswered, .mm-grades-table .mm-question-notanswered.itemcenter, .item.mm-question-incorrect, .mm-grades-table .mm-question-incorrect.itemcenter, .platform-android .item.mm-question-notanswered, .platform-android .mm-grades-table .mm-question-notanswered.itemcenter, .mm-grades-table .platform-android .mm-question-notanswered.itemcenter, .platform-android .item.mm-question-incorrect, .platform-android .mm-grades-table .mm-question-incorrect.itemcenter, .mm-grades-table .platform-android .mm-question-incorrect.itemcenter, .platform-ios .item.mm-question-notanswered, .platform-ios .mm-grades-table .mm-question-notanswered.itemcenter, .mm-grades-table .platform-ios .mm-question-notanswered.itemcenter, .platform-ios .item.mm-question-incorrect, .platform-ios .mm-grades-table .mm-question-incorrect.itemcenter, .mm-grades-table .platform-ios .mm-question-incorrect.itemcenter {
-  background-color: #fcc; }
-
-.mm-question-warning, p.mm-question-warning, .item .mm-question-warning, .mm-grades-table .itemcenter .mm-question-warning {
-  color: #c00; }
-
-#mm-settings-languagelabel {
-  color: #000; }
-
 .bar-side-menu {
   border-color: transparent;
   background-color: #f70;
@@ -9555,6 +9537,27 @@ input.mm-fileuploader-picker {
 .mm-site_mm_user-profile .mm-tab-handlers {
   padding-bottom: 16px; }
 
+.mm-mm_login_sites .item-thumbnail-left .item-content {
+  padding-top: 16px;
+  padding-right: 16px; }
+.mm-mm_login_sites .list-left-editing .item-thumbnail-left .item-content {
+  padding-right: 49px; }
+.mm-mm_login_sites .avatar {
+  margin: 0;
+  width: 80px;
+  height: 80px;
+  max-width: 80px;
+  max-height: 80px;
+  border-radius: 50%;
+  padding: 4px;
+  border: 1px solid #ddd; }
+
+.mm-login-sitepolicy-iframe {
+  height: 300px; }
+
+.mm-site_coursesgrades .item .badge, .mm-site_coursesgrades .mm-grades-table .itemcenter .badge, .mm-grades-table .mm-site_coursesgrades .itemcenter .badge, .mm-site_coursesgrades .item .mma-messages-date span, .mma-messages-date .mm-site_coursesgrades .item span, .mm-site_coursesgrades .mm-grades-table .itemcenter .mma-messages-date span, .mma-messages-date .mm-site_coursesgrades .mm-grades-table .itemcenter span, .mm-grades-table .mm-site_coursesgrades .itemcenter .mma-messages-date span, .mma-messages-date .mm-grades-table .mm-site_coursesgrades .itemcenter span, .mm-site_coursesgrades .item .mma-chat-notice span, .mma-chat-notice .mm-site_coursesgrades .item span, .mm-site_coursesgrades .mm-grades-table .itemcenter .mma-chat-notice span, .mma-chat-notice .mm-site_coursesgrades .mm-grades-table .itemcenter span, .mm-grades-table .mm-site_coursesgrades .itemcenter .mma-chat-notice span, .mma-chat-notice .mm-grades-table .mm-site_coursesgrades .itemcenter span {
+  right: 16px; }
+
 .mm-site_frontpage .mma-frontpage-item-container .item-media {
   min-height: 55px;
   padding-left: 54px; }
@@ -9567,9 +9570,6 @@ input.mm-fileuploader-picker {
 .mm-site_frontpage .mm-frontpageitemnews .mm-module-buttons {
   width: 30px;
   height: 22px; }
-
-.mm-site_coursesgrades .item .badge, .mm-site_coursesgrades .mm-grades-table .itemcenter .badge, .mm-grades-table .mm-site_coursesgrades .itemcenter .badge, .mm-site_coursesgrades .item .mma-messages-date span, .mma-messages-date .mm-site_coursesgrades .item span, .mm-site_coursesgrades .mm-grades-table .itemcenter .mma-messages-date span, .mma-messages-date .mm-site_coursesgrades .mm-grades-table .itemcenter span, .mm-grades-table .mm-site_coursesgrades .itemcenter .mma-messages-date span, .mma-messages-date .mm-grades-table .mm-site_coursesgrades .itemcenter span, .mm-site_coursesgrades .item .mma-chat-notice span, .mma-chat-notice .mm-site_coursesgrades .item span, .mm-site_coursesgrades .mm-grades-table .itemcenter .mma-chat-notice span, .mma-chat-notice .mm-site_coursesgrades .mm-grades-table .itemcenter span, .mm-grades-table .mm-site_coursesgrades .itemcenter .mma-chat-notice span, .mma-chat-notice .mm-grades-table .mm-site_coursesgrades .itemcenter span {
-  right: 16px; }
 
 .mma-messages-date {
   text-align: center;
@@ -9632,6 +9632,24 @@ input.mm-fileuploader-picker {
 .mma-messages-showprevious-spinner-container {
   width: 100%;
   text-align: center; }
+
+.mma-mod_survey-darkbg {
+  background-color: #f1f1f1; }
+
+.mma-mod_survey-padding-top {
+  padding-top: 20px; }
+
+textarea.mma-mod_survey-textarea {
+  height: 100px;
+  border: 1px solid #ddd; }
+
+select.mma-mod_survey-select {
+  background-color: transparent;
+  padding-left: 0px;
+  padding-right: 32px;
+  max-width: 100%; }
+  select.mma-mod_survey-select .mma-mod_survey-defaultoption {
+    display: none; }
 
 .mm-site_mod_assign div.latesubmission, .mm-site_mod_assign-submission div.latesubmission {
   background-color: #efcfcf; }
@@ -9804,6 +9822,18 @@ p.mma-mod-assign-warning {
   margin: 0;
   width: auto; }
 
+.mm-site_mod_choice .chart {
+  max-width: 400px;
+  margin: 0 auto; }
+@media (min-width: 767px) {
+  .mm-site_mod_choice .col {
+    border-left: 1px solid #ddd; }
+    .mm-site_mod_choice .col.item, .mm-site_mod_choice .mm-grades-table .col.itemcenter, .mm-grades-table .mm-site_mod_choice .col.itemcenter, .mm-site_mod_choice .col .chart-item {
+      margin-top: 0;
+      border-top: 0; }
+    .mm-site_mod_choice .col:first-child {
+      border-left: 0; } }
+
 .mma-chat-notice {
   text-align: center;
   margin-top: 10px; }
@@ -9827,18 +9857,6 @@ p.mma-mod-assign-warning {
 
 .mma-chat-reconnect-button, .button.mma-chat-reconnect-button {
   margin: 0; }
-
-.mm-site_mod_choice .chart {
-  max-width: 400px;
-  margin: 0 auto; }
-@media (min-width: 767px) {
-  .mm-site_mod_choice .col {
-    border-left: 1px solid #ddd; }
-    .mm-site_mod_choice .col.item, .mm-site_mod_choice .mm-grades-table .col.itemcenter, .mm-grades-table .mm-site_mod_choice .col.itemcenter, .mm-site_mod_choice .col .chart-item {
-      margin-top: 0;
-      border-top: 0; }
-    .mm-site_mod_choice .col:first-child {
-      border-left: 0; } }
 
 .mma-forum-discussion-link {
   text-decoration: none; }
@@ -9972,24 +9990,6 @@ ion-popover-view {
 .platform-ios ion-popover-view.mma-scorm-popover {
   padding-top: 10px;
   padding-bottom: 10px; }
-
-.mma-mod_survey-darkbg {
-  background-color: #f1f1f1; }
-
-.mma-mod_survey-padding-top {
-  padding-top: 20px; }
-
-textarea.mma-mod_survey-textarea {
-  height: 100px;
-  border: 1px solid #ddd; }
-
-select.mma-mod_survey-select {
-  background-color: transparent;
-  padding-left: 0px;
-  padding-right: 32px;
-  max-width: 100%; }
-  select.mma-mod_survey-select .mma-mod_survey-defaultoption {
-    display: none; }
 
 .wiki-toc {
   border: 1px solid #bbb;
