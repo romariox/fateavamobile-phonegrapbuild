@@ -9368,15 +9368,6 @@ mm-format-text[max-height], *[mm-format-text][max-height] {
 .mm-course-module-handler mm-format-text + mm-format-text {
   margin-top: 16px; }
 
-input.mm-fileuploader-picker {
-  position: absolute;
-  top: 0;
-  right: 0;
-  min-width: 100%;
-  min-height: 100%;
-  opacity: 0;
-  outline: none; }
-
 /* - User grades table (most of it extracted from MM1)
 -------------------------------------------------------------------------- */
 .mm-grades-table {
@@ -9546,6 +9537,15 @@ input.mm-fileuploader-picker {
 
 .has-side-menu-header {
   top: 80px; }
+
+input.mm-fileuploader-picker {
+  position: absolute;
+  top: 0;
+  right: 0;
+  min-width: 100%;
+  min-height: 100%;
+  opacity: 0;
+  outline: none; }
 
 .foreground-ion-edit.ion-edit:before {
   position: relative;
